@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markdown", "Markdown\Markdown.csproj", "{977BC183-5C51-4DA9-A0F7-FD92CCDA0290}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc", "CDoc\CDoc.csproj", "{977BC183-5C51-4DA9-A0F7-FD92CCDA0290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markdown.Api", "Markdown.Api\Markdown.Api.csproj", "{BD87C0BC-F5CC-4E78-A819-BF0A8FEB0E51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Api", "CDoc.Api\CDoc.Api.csproj", "{BD87C0BC-F5CC-4E78-A819-BF0A8FEB0E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markdown.Process", "Markdown.Process\Markdown.Process.csproj", "{CAB60A37-8B9C-4B3C-A116-0799FB6AFCF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Process", "CDoc.Process\CDoc.Process.csproj", "{CAB60A37-8B9C-4B3C-A116-0799FB6AFCF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Markdown.Error", "Markdown.Error\Markdown.Error.csproj", "{2F9726FC-6765-473E-842E-8A268D48CB31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Error", "CDoc.Error\CDoc.Error.csproj", "{2F9726FC-6765-473E-842E-8A268D48CB31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

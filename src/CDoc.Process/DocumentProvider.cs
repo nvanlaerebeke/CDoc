@@ -1,6 +1,6 @@
-using Markdown.Process.Objects;
+using CDoc.Process.Objects;
 
-namespace Markdown.Process;
+namespace CDoc.Process;
 
 internal class DocumentProvider : IDocumentProvider
 {

@@ -1,7 +1,8 @@
 using ApiBase.Error;
+using CDoc.Process;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Markdown.Api;
+namespace CDoc.Api;
 
 public class Startup : ApiBase.ApiBase
 {
@@ -9,6 +10,7 @@ public class Startup : ApiBase.ApiBase
 
     protected override void ConfigureApi(IServiceCollection services) {
        _ = services.AddAutoMapper(typeof(Startup));
+       _ = services.AddSingleton<IDocumentProvider>(new ActionProvider().GetDocumentProvider());
     }
 
     protected override bool ConfigureOpenAPI(IServiceCollection services) {

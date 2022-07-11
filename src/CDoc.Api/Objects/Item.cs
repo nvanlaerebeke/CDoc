@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Markdown.Api.Objects;
+namespace CDoc.Api.Objects;
 
 public class Item
 {

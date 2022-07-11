@@ -1,6 +1,6 @@
-using Markdown.Process.Objects;
+using CDoc.Process.Objects;
 
-namespace Markdown.Process;
+namespace CDoc.Process;
 
 internal static class MockData
 {
@@ -9,7 +9,7 @@ internal static class MockData
         { "/", new List<Item>()
         {
             new Item("Introduction", "/Introduction", "Directory", true),
-            new Item ("Index", "/Index.md", "Markdown", false)
+            new Item ("Index", "/Index.md", "CDoc", false)
         }}
     };
     

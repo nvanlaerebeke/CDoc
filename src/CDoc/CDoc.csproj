@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Markdown.Api\Markdown.Api.csproj" />
+      <ProjectReference Include="..\CDoc.Api\CDoc.Api.csproj" />
     </ItemGroup>
 
 </Project>

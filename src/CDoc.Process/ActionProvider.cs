@@ -1,8 +1,8 @@
-namespace Markdown.Process;
+namespace CDoc.Process;
 
 public class ActionProvider
 {
-    public IDocumentProvider GetDataProvider()
+    public IDocumentProvider GetDocumentProvider()
     {
         return new DocumentProvider();
     } 
