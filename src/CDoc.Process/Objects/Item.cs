@@ -2,16 +2,18 @@ namespace CDoc.Process.Objects;
 
 public class Item
 {
-    public Item(string name, string path, string type, bool hasChildren)
+    public Item(string name, string path, int size, string mimetype, bool hasPreview)
     {
         Name = name;
         Path = path;
-        Type = type;
-        HasChildren = hasChildren;
+        Size = size;
+        MimeType = mimetype;
+        HasPreview = hasPreview;
     }
-    
+
     public string Name { get; }
     public string Path { get; }
-    public string Type { get; }
-    public bool HasChildren { get; }
+    public string MimeType { get; }
+    public bool HasPreview { get; }
+    public int Size { get; }
 }

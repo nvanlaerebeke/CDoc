@@ -1,0 +1,12 @@
+<div class="select" *ngIf="Sources.length != 0">
+    <label class="d-inline-block" for="source"><small><strong>Source: </strong></small></label>
+    <select 
+      #source 
+      (change)="selectOption(source.value)" 
+      id="source" 
+      class="form-control form-control-sm d-inline-block" 
+      style="width: auto; margin-left:1em;"
+    >
+      <option *ngFor="let source of Sources" [value]="source.repository" [selected]="Selected == source.repository">{{source.name}}</option>
+    </select>
+</div>

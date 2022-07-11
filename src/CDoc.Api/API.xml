@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CDoc.Api</name>
+    </assembly>
+    <members>
+        <member name="T:CDoc.Api.Controllers.DocumentController">
+            <summary>
+                Endpoints related to documents
+            </summary>
+        </member>
+        <member name="M:CDoc.Api.Controllers.DocumentController.#ctor(AutoMapper.IMapper,CDoc.Process.IDocumentProvider)">
+            <summary>
+                DocumentInfo controller constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="documentProvider"></param>
+        </member>
+        <member name="M:CDoc.Api.Controllers.DocumentController.Get(System.String,System.String)">
+            <summary>
+                Gets a document by path
+            </summary>
+            <param name="repository"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Controllers.DocumentController.List(System.String,System.String)">
+            <summary>
+                List the document tree for a specific path
+            </summary>
+            <param name="repository"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Controllers.DocumentController.Preview(System.String,System.String)">
+            <summary>
+                Returns the details for a specific supported document
+            </summary>
+            <param name="repository"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Controllers.DocumentController.GetRawData(System.String,System.String)">
+            <summary>
+                Returns the details for a specific supported document
+            </summary>
+            <param name="repository"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CDoc.Api.Controllers.SourceController">
+            <summary>
+            Endpoints related to sources 
+            </summary>
+        </member>
+        <member name="M:CDoc.Api.Controllers.SourceController.#ctor(AutoMapper.IMapper,CDoc.Process.ISourceActions)">
+            <summary>
+            DocumentInfo controller constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="documentProvider"></param>
+        </member>
+        <member name="M:CDoc.Api.Controllers.SourceController.SyncAll">
+            <summary>
+            Syncs all the sources
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Controllers.SourceController.Sync(System.String)">
+            <summary>
+            Syncs all the sources
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Controllers.SourceController.GetAll">
+            <summary>
+            Returns all the sources
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CDoc.Api.MapperProfile">
+            <summary>
+            Profile for AutoMapper
+            </summary>
+        </member>
+        <member name="M:CDoc.Api.MapperProfile.#ctor">
+            <summary>
+            Creation of the mapping rules
+            </summary>
+        </member>
+        <member name="T:CDoc.Api.Objects.Item">
+            <summary>
+            Represents item in the document tree
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Item.Name">
+            <summary>
+            Name of the document
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Item.Path">
+            <summary>
+            Relative path in the document tree 
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Item.MimeType">
+            <summary>
+            Kind of document
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Item.HasPreview">
+            <summary>
+            Does the API provide an HTML preview for this type
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Item.Size">
+             <summary>
+             Size in bytes of the item
+            
+             0 for directories
+             </summary>
+        </member>
+        <member name="T:CDoc.Api.Objects.Preview">
+            <summary>
+            Document information for a supported path 
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Preview.Name">
+            <summary>
+            Name of the document
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Preview.Path">
+            <summary>
+            Path of the document
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Preview.Html">
+            <summary>
+            Html that represents the document
+            </summary>
+        </member>
+        <member name="T:CDoc.Api.Objects.Source">
+            <summary>
+            The documentation source
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Source.Repository">
+            <summary>
+            Repository where the source is located
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Source.CacheType">
+            <summary>
+            How to cache the source (Disk/Memory)
+            </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Source.AutoUpdateSeconds">
+             <summary>
+             Number of seconds between each auto pull
+            
+             0 = disabled
+             </summary>
+        </member>
+        <member name="P:CDoc.Api.Objects.Source.PullBeforeRead">
+             <summary>
+             Pull before reading a document
+            
+             Note: Not Yet Implemented
+             </summary>
+        </member>
+        <member name="T:CDoc.Api.Startup">
+            <summary>
+            Api startup class
+            </summary>
+        </member>
+        <member name="M:CDoc.Api.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:CDoc.Api.Startup.ConfigureApi(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the Web Api services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:CDoc.Api.Startup.ConfigureOpenAPI(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+             <summary>
+             Configures the OpenApi (swagger) documentation
+            
+             Returns true to enable the document generation
+             </summary>
+             <param name="services"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Startup.DefaultVersion">
+            <summary>
+            Returns the default Api version to serve
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Startup.GetName">
+            <summary>
+            Returns the name of the Api that will be shown in the documentation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Startup.GetBadRequestErrorProvider">
+            <summary>
+            Returns the class that will be used to provide error messages for invalid input properties
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CDoc.Api.Startup.GetAPIXmlDescriptionsFileName">
+            <summary>
+            Returns the name of the Xml file that contains the class and method documentation
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

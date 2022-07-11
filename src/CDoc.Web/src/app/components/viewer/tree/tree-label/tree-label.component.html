@@ -1,0 +1,16 @@
+<a [routerLink]="Link">
+    <div *ngIf="Item.mimetype != 'Directory'" class="tree-item">
+        <span class="fileIcon"><fa-icon [icon]="getIcon(Item)"></fa-icon></span>
+        {{Item.name}}
+    </div>
+</a>
+<div *ngIf="Item.mimetype == 'Directory'">
+    <div class="tree-item" (click)="onChangeState(Item)">
+        <div style="display: inline-block;margin-right: 10px;">
+            <fa-icon *ngIf="Item.isOpen" [icon]="faChevronDown"></fa-icon>
+            <fa-icon *ngIf="!Item.isOpen" [icon]="faChevronRight"></fa-icon>
+        </div>
+        <span>{{Item.name}}</span>
+    </div>
+    <app-tree *ngIf="CurrentItem != null && Item.isOpen" [Repository]="CurrentItem.repository" [Path]="Item.path" [CurrentItem]="CurrentItem"></app-tree>
+</div>

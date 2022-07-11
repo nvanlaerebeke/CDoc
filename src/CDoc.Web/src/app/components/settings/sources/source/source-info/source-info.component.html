@@ -1,0 +1,35 @@
+<div>
+    <dl class="row">
+        <dt>Repository</dt>
+        <dd>{{Source.repository}}</dd>
+      
+        <dt>Cache Type</dt>
+        <dd>{{Source.cache}}</dd>
+      
+        <dt>Auto Update Interval (seconds)</dt>
+        <dd>{{Source.auto_update_seconds}}</dd> 
+
+        <dt>Pull Before Read</dt>
+        <dd>{{Source.pull_before_read}}</dd> 
+    </dl>
+</div>
+<div class="list-group mb-5 shadow">
+    <div class="list-group-item">
+        <div class="row align-items-center">
+            <div class="col">Sync (pull)</div>
+            <div class="col-auto">
+                <div class="custom-control custom-switch">
+                    <div class="clearfix" *ngIf="Syncing">
+                        <div class="spinner-border float-right" role="status">
+                          <span class="sr-only">Syncing...</span>
+                        </div>
+                    </div>
+                    <a *ngIf="!Syncing" href="#" (click)="syncNow()" class="btn btn-light shadow">
+                        <fa-icon [icon]="faRotate"></fa-icon>
+                        Sync Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

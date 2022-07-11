@@ -1,0 +1,11 @@
+.breadcrumb>li+li:before{
+  content: "/" !important;
+  font-size: 1em;
+}
+
+.breadcrumb{
+  padding: 15px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border-radius: 8px !important
+}

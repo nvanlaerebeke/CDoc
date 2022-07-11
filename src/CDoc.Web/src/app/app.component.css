@@ -1,0 +1,14 @@
+.viewer {
+    display: grid;
+    grid-template-columns: fit-content(20%) fit-content(100%);
+    grid-template-areas: "app-sidebar app-content"
+}
+
+app-sidebar {
+    min-width: 200px;
+    min-width: 300px;
+}
+
+app-content {
+    padding-left: 1em;
+}

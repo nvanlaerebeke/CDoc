@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  web:
+    image: cdoc.web
+    ports:
+      - "80:80"
+    volumes:
+      -  ./etc/cdoc.web.json:/usr/local/apache2/htdocs/assets/cdoc.web.json
+  api:
+    image: "cdoc.api"
+    ports:
+      - "8080:80"
+    volumes:
+      -  ./etc/cdoc.api.json:/etc/cdoc.json

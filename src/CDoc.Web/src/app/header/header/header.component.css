@@ -1,0 +1,30 @@
+.nav-container {
+    position: absolute;
+    right: 2em;
+}
+
+.viewmode, .source {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu-icons {
+    font-size: 2em;
+    display: inline-block;
+}
+
+.menu-icons > div {
+    width: 1em;
+}
+
+.menu-icons fa-icon {
+    transition: 0.5s;
+}
+
+.menu-icons fa-icon:hover {
+    color: grey;
+}
+
+a {
+    color: black;
+}

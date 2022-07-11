@@ -1,0 +1,5 @@
+<ol class="breadcrumb shadow">
+    <li *ngFor="let part of Parts" class="breadcrumb-item">
+      <span *ngIf="Parts[0] == part">/&nbsp;</span>{{part}}
+    </li>
+</ol>

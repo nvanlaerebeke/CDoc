@@ -1,0 +1,8 @@
+<div [ngClass]="!CookiesAllowed && !CookiesRefused ? 'show' : ''" class="alert text-center cookiealert" role="alert">
+    We use cookies to ensure you get the best experience on our website. 
+    <a href="https://cookiesandyou.com/" target="_blank">
+        Learn more
+    </a>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" (click)="acceptCookies()">I agree</button>
+    <button type="button" class="btn btn-primary btn-sm acceptcookies btn-warning" (click)="refuseCookies()">Refuse</button>
+</div>

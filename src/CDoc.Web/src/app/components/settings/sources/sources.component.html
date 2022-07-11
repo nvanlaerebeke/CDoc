@@ -1,0 +1,5 @@
+<div *ngIf="Sources != null" class="accordion" id="sourceAccordion">
+    <ng-container *ngFor="let Source of Sources" class="accordion-item">
+        <app-source [Source]="Source"></app-source>
+    </ng-container>
+</div>

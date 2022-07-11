@@ -1,0 +1,8 @@
+<div class="select">
+  <label class="d-inline-block" for="viewmode"><small><strong>View Mode: </strong></small></label>
+  <select #viewMode (change)="selectOption(viewMode.value)" id="viewmode" class="form-control form-control-sm d-inline-block" style="width: auto; margin-left:1em;">
+    <option value="markdown" [selected]="Selected == 'markdown'">View Mode: Markdown</option>
+    <option value="documents" [selected]="Selected == 'documents'">View Mode: Documents</option>
+    <option value="all" [selected]="Selected == 'all'">View Mode: All</option>
+  </select>
+</div>

@@ -1,0 +1,22 @@
+.tree, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tree {
+  background: #fbfbfb;
+  border: 1px solid #d2d2d2;
+}
+
+.tree li {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.tree li:last-child {
+  border: 0;
+}
+
+.child {
+  margin-left: 15px;
+}

@@ -1,0 +1,7 @@
+<ul [ngClass]="Path == '/' ? 'tree shadow' : ''">
+  <ng-container *ngFor="let item of Items">
+    <li *ngIf="item.mimetype == 'Directory' ? item.hasChildren : ShouldBeDisplayed(item, Display)" [ngClass]="Path != '/' ? 'child' : ''">
+      <app-tree-label [Item]="item" [CurrentItem]="CurrentItem"></app-tree-label>
+    </li>  
+  </ng-container>
+</ul>

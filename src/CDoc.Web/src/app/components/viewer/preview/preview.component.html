@@ -1,0 +1,16 @@
+<div class="viewer" *ngIf="Repository != null">
+    <app-tree [Repository]="Repository" [Path]="'/'" [CurrentItem]="Item" ></app-tree>
+    <div style="width:100%;">
+        <div *ngIf="Item != null" class="p-3">
+            <div class="d-flex justify-content-left">
+                <app-breadcrumb [Item]="Item"></app-breadcrumb>
+            </div>
+            <div class="p-3" *ngIf="Item != null">        
+                <app-html-preview *ngIf="Item.previewType == 'html'" [Item]="Item" ></app-html-preview>
+                <app-image-preview *ngIf="Item.previewType == 'image'" [Item]="Item" ></app-image-preview>
+                <app-file-preview *ngIf="Item.previewType == 'file'" [Item]="Item" ></app-file-preview>
+                <app-pdf-preview *ngIf="Item.previewType == 'pdf'" [Item]="Item" ></app-pdf-preview>
+            </div>
+        </div>
+    </div>
+</div>

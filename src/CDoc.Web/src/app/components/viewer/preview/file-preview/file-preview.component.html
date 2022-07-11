@@ -1,0 +1,16 @@
+<dl class="row">
+    <dt>Name</dt>
+    <dd>{{Item.name}}</dd>
+  
+    <dt>Path</dt>
+    <dd>{{Item.path}}</dd>
+  
+    <dt>Size</dt>
+    <dd>{{Item.sizeHumanReadable }}</dd> 
+</dl>
+<div class="mt-4">
+    <a href="{{DownloadUrl}}" class="btn btn-light shadow">
+        <fa-icon [icon]="faDownload"></fa-icon>
+        Download
+    </a>
+</div>

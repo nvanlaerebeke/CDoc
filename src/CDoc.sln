@@ -8,6 +8,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Process", "CDoc.Proces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Error", "CDoc.Error\CDoc.Error.csproj", "{2F9726FC-6765-473E-842E-8A268D48CB31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Source.Git", "CDoc.Source.Git\CDoc.Source.Git.csproj", "{6017543A-6390-4EAE-B098-D1803BEBD8F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Config", "CDoc.Config\CDoc.Config.csproj", "{2BA3F93B-7EC4-420A-8139-BC31591AFDEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.Source", "CDoc.Source\CDoc.Source.csproj", "{159A411A-B0A9-435A-B35D-18A951A6DEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.HtmlProvider", "CDoc.HtmlProvider\CDoc.HtmlProvider.csproj", "{36727E4C-4687-4221-9AF7-F560CE18E8D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDoc.HtmlProvider.Markdown", "CDoc.HtmlProvider.Markdown\CDoc.HtmlProvider.Markdown.csproj", "{25692048-6AF3-4177-B404-591222631A9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +40,25 @@ Global
 		{2F9726FC-6765-473E-842E-8A268D48CB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9726FC-6765-473E-842E-8A268D48CB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9726FC-6765-473E-842E-8A268D48CB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6017543A-6390-4EAE-B098-D1803BEBD8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6017543A-6390-4EAE-B098-D1803BEBD8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6017543A-6390-4EAE-B098-D1803BEBD8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6017543A-6390-4EAE-B098-D1803BEBD8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA3F93B-7EC4-420A-8139-BC31591AFDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA3F93B-7EC4-420A-8139-BC31591AFDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA3F93B-7EC4-420A-8139-BC31591AFDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA3F93B-7EC4-420A-8139-BC31591AFDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159A411A-B0A9-435A-B35D-18A951A6DEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159A411A-B0A9-435A-B35D-18A951A6DEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159A411A-B0A9-435A-B35D-18A951A6DEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159A411A-B0A9-435A-B35D-18A951A6DEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36727E4C-4687-4221-9AF7-F560CE18E8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36727E4C-4687-4221-9AF7-F560CE18E8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36727E4C-4687-4221-9AF7-F560CE18E8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36727E4C-4687-4221-9AF7-F560CE18E8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25692048-6AF3-4177-B404-591222631A9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25692048-6AF3-4177-B404-591222631A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25692048-6AF3-4177-B404-591222631A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25692048-6AF3-4177-B404-591222631A9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

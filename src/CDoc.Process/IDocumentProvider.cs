@@ -4,6 +4,8 @@ namespace CDoc.Process;
 
 public interface IDocumentProvider
 {
-    IEnumerable<Item> Ls(string path);
-    DocumentInfo GetDocumentInfo(string path);
+    Item? Get(string repository, string path);
+    IEnumerable<Item>? Ls(string repository, string path);
+    Preview? Preview(string repository, string path);
+    FileInfo? GetFileInfo(string repository, string path);
 }

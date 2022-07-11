@@ -1,0 +1,22 @@
+<header class="d-flex pb-3 mb-4 border-bottom">
+  <a href="/" class="d-flex me-md-auto text-dark text-decoration-none" style="padding-left:1em;">
+    <span class="fs-1">CDoc</span>
+  </a>
+
+  <div class="nav-container">
+    <div class="source">
+      <app-source [Selected]="Repository" (repositoryChanged)="onRepositoryChanged($event)"></app-source>
+    </div>
+    <div class="viewmode">
+      <app-viewmode [Selected]="Display" (displayChanged)="onDisplayChanged($event)"></app-viewmode>
+    </div>
+    <div class="menu-icons">
+      <a *ngIf="Page != Pages.Viewer" (click)="goToView()">
+        <fa-icon  [icon]="faBook"></fa-icon>
+      </a>
+      <a *ngIf="Page != Pages.Settings" (click)="goToSettings()">
+        <fa-icon [icon]="faGears"></fa-icon>      
+      </a>
+    </div>
+  </div>
+</header>

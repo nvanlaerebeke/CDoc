@@ -6,4 +6,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\CDoc.Config\CDoc.Config.csproj" />
+      <ProjectReference Include="..\CDoc.HtmlProvider.Markdown\CDoc.HtmlProvider.Markdown.csproj" />
+      <ProjectReference Include="..\CDoc.HtmlProvider\CDoc.HtmlProvider.csproj" />
+      <ProjectReference Include="..\CDoc.Source.Git\CDoc.Source.Git.csproj" />
+      <ProjectReference Include="..\CDoc.Source\CDoc.Source.csproj" />
+    </ItemGroup>
+
 </Project>

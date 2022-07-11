@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "repository": "",
+      "ssh_key": "",
+      "cache": "disk",
+      "auto_update_seconds": 3600,
+      "pull_before_read": false
+    }
+  ]
+}
